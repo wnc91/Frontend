@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Cadastro de Usuário</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    </head>
+    <body>
+      <div class="container mt-5">
+        <h1>Cadastro de Usuário</h1>
+        <form id="cadastro-form">
+          <div class="form-group">
+            <label for="first-name">Primeiro Nome:</label>
+            <input type="text" class="form-control" id="first-name" required />
+            <div id="first-name-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Último Nome:</label>
+            <input type="text" class="form-control" id="last-name" required />
+            <div id="last-name-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" required />
+            <div id="email-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" class="form-control" id="password" required />
+            <div id="password-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" required />
+            <div id="endereco-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="numero">Número:</label>
+            <input type="text" class="form-control" id="numero" required />
+            <div id="numero-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="uf">UF:</label>
+            <select class="form-control" id="uf" required></select>
+            <div id="uf-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <select class="form-control" id="cidade" required></select>
+            <div id="cidade-error" class="invalid-feedback">Este campo é obrigatório.</div>
+          </div>
+          <div class="form-group">
+            <label for="bairro">Bairro:</label>
+            <select class="form-control" id="bairro" required></select>
+            <div id="bairro-error" class="invalid-feedback">Este campo é obrigatório.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="localidades.js"></script>
+  <script src="cadastro.js" type="module"></script>
+  </body>
+  </html>
